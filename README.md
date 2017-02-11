@@ -1,8 +1,11 @@
 #MaxAndAlbert
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+
 As a server it uses [Express](http://expressjs.com).
+
 Library for components and style [MaterialUI](http://www.material-ui.com/).
+
 
 
 ## Available Scripts
