@@ -35,19 +35,18 @@ class App extends Component {
                     <h2>Welcome to Max & Albert</h2>
                 </div>
 
-                <Slider />
-                <Slider defaultValue={0.5} />
-                <Slider defaultValue={1} />
                 <Link to="/about">
                     <RaisedButton label="About us page" />
-
                 </Link>
-                <FlatButton label="Default" />
 
-                <p className="App-intro">
+                <Link to="/notfound">
+                    <RaisedButton label="Not Found page" />
+                </Link>
 
-                    <br /><br />http://www.material-ui.com/#/get-started/usage<br/>
-                </p>
+                <div className="mainApp">
+                {this.props.children}
+                </div>
+
 
             </div>
             </MuiThemeProvider>

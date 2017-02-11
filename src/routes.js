@@ -6,19 +6,13 @@ import App from './components/App';
 import About from './components/About';
 import NotFound from './components/NotFound';
 
-const componentRegistry = {
-    "App": App,
-    "About": About,
-    "NotFound":NotFound
-}
-
-
 const Routes = (props) => (
 
     <Router {...props}>
-        <Route path="/" component={App} />
-        <Route path="/about" component={About} />
-        <Route path="*" component={NotFound} />
+        <Route path="/" component={App}>
+            <Route path="/about" component={About} />
+            <Route path="*" component={NotFound} />
+        </Route>
     </Router>
 );
 
