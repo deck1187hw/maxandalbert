@@ -1,5 +1,5 @@
 // src/components/App/index.js
-import React, { PropTypes, Component } from 'react';
+import React, {  Component } from 'react';
 import classnames from 'classnames';
 import { Link } from 'react-router';
 import logo from './logo.svg';
@@ -10,20 +10,18 @@ injectTapEventPlugin();
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 import RaisedButton from 'material-ui/RaisedButton';
-import Slider from 'material-ui/Slider';
-import FlatButton from 'material-ui/FlatButton';
+
 
 
 import './style.css';
 
 class App extends Component {
-    // static propTypes = {}
-    // static defaultProps = {}
-    // state = {}
+     static defaultProps = {}
+     state = {}
 
     render() {
 
-        const { className, ...props } = this.props;
+        const { className } = this.props;
 
 
         return (
