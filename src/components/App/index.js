@@ -32,22 +32,27 @@ class App extends Component {
                     <img src={logo} className="App-logo" alt="logo" />
                     <h2>Welcome to Max & Albert</h2>
                 </div>
-
+				 <Link to="/">
+                    <RaisedButton label="Homepage" />
+                </Link>
                 <Link to="/about">
-                    <RaisedButton label="About us page" />
+                    <RaisedButton label="About" />
+                </Link>
+                
+                <Link to="/settings">
+                    <RaisedButton label="Settings" />
                 </Link>
 
                 <Link to="/notfound">
-                    <RaisedButton label="Not Found page" />
+                    <RaisedButton label="Not Found" />
                 </Link>
 
                 <div className="mainApp">
-                {this.props.children}
+                    {this.props.children}
                 </div>
-
-
             </div>
             </MuiThemeProvider>
+            
         );
     }
 }
