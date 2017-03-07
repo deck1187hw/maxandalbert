@@ -12,7 +12,6 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import RaisedButton from 'material-ui/RaisedButton';
 
 
-
 import './style.css';
 
 class App extends Component {
@@ -38,7 +37,7 @@ class App extends Component {
                 <Link to="/about">
                     <RaisedButton label="About" />
                 </Link>
-                
+
                 <Link to="/settings">
                     <RaisedButton label="Settings" />
                 </Link>

@@ -139,7 +139,13 @@ module.exports = {
       // in development "style" loader enables hot editing of CSS.
       {
         test: /\.css$/,
-        loader: 'style!css?importLoaders=1!postcss'
+        loader: 'style-loader!css-loader?modules',
+        include: /flexboxgrid/
+      },
+      {
+        test: /\.css$/,
+        loader: 'style!css?importLoaders=1!postcss',
+        exclude: /flexboxgrid/ // so we have to exclude it
       },
       // JSON is not enabled by default in Webpack but both Node and Browserify
       // allow it implicitly so we also enable it.
